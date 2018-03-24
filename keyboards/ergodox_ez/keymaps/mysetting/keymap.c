@@ -27,7 +27,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * |--------+------+------+------+------+------|  L1  |           |  L2  |------+------+------+------+------+--------|
  * | LCmd   |   Z  |   X  |   C  |   V  |   B  |      |           |      |   N  |   M  |   ,  |   .  |  /   |   \    |
  * `--------+------+------+------+------+-------------'           `-------------+------+------+------+------+--------'
- *   | Grv  |  '"  |VolDwn|  UP  | DOWN |                                       | LEFT | RIGHT| VolUp|  ^   |   \  |
+ *   | Alt  |  '"  |VolDwn|  UP  | DOWN |                                       | LEFT | RIGHT| VolUp|  ^   |   \  |
  *   `----------------------------------'                                       `----------------------------------'
  *                                        ,-------------.       ,-------------.
  *                                        | Del  | LGui |       | Alt  |  RAlt  |
@@ -45,19 +45,19 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         KC_TAB,         KC_Q,         KC_W,   KC_E,   KC_R,   KC_T,   JP_LBRC,
         KC_LCTRL,       KC_A,         KC_S,   KC_D,   KC_F,   KC_G,
         KC_LGUI,        KC_Z,         KC_X,   KC_C,   KC_V,   KC_B,   TG(SYMB),
-        KC_GRV,         KC_QUOT,      KC_VOLD,KC_UP,  KC_DOWN,
+        KC_LALT,        KC_PSCR,      KC_VOLD,KC_UP,  KC_DOWN,
                                               KC_DEL,  KC_LGUI,
                                                               KC_HOME,
-                                              KC_SPC, KC_LSFT,KC_LANG2,
+                                              KC_SPC, KC_LSFT,KC_MHEN,
         // right hand
-             KC_END,      KC_6,   KC_7,    KC_8,   KC_9,   KC_0,             KC_MINS,
-             JP_RBRC,     KC_Y,   KC_U,    KC_I,   KC_O,   KC_P,             KC_AT,
+             KC_END,      KC_6,   KC_7,    KC_8,   KC_9,   KC_0,             JP_MINS,
+             JP_RBRC,     KC_Y,   KC_U,    KC_I,   KC_O,   KC_P,             JP_AT,
                           KC_H,   KC_J,    KC_K,   KC_L,   KC_SCLN,          JP_COLN,
              TG(MDIA),    KC_N,   KC_M,    KC_COMM,KC_DOT, KC_SLSH,          JP_BSLS,
-                                  KC_LEFT, KC_RIGHT,KC_VOLU,KC_CIRC,         KC_JYEN,
+                                  KC_LEFT, KC_RIGHT,KC_VOLU,JP_CIRC,         JP_YEN,
              KC_LALT,     KC_RALT,
              KC_PGUP,
-             JP_KANA,     KC_BSPC,KC_ENT
+             KC_KANA,     KC_BSPC,KC_ENT
     ),
 /* Keymap 1: Symbol Layer
  *
